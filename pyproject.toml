@@ -1,0 +1,22 @@
+[project]
+name = "crm-juridico-cobranca"
+version = "0.1.0"
+description = "CRM jurídico para cobrança e recuperação de crédito"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.29",
+  "sqlalchemy>=2.0",
+  "pydantic>=2.6",
+  "pydantic-settings>=2.2",
+  "python-jose[cryptography]>=3.3",
+  "passlib[bcrypt]>=1.7",
+  "python-multipart>=0.0.9",
+  "jinja2>=3.1",
+  "alembic>=1.13",
+  "redis>=5.0",
+  "celery>=5.3"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
